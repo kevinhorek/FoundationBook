@@ -64,7 +64,8 @@
     <div class="row">
         <div class="large-12 columns">
             <div class="panel">
-                <h3>We&rsquo;re stoked you want to try Foundation! </h3>
+                <h3>We&rsquo;re stoked you want to try Foundation! <span data-tooltip data-options="disable_for_touch:true" class="has-tip [tip-top tip-bottom tip-left tip-right]" title="Tooltips are awesome, you should totally use them!">extended information</span>
+</h3>
                 <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
                 <p>Once you've exhausted the fun in this document, you should check out:</p>
                 <div class="row">
@@ -318,37 +319,167 @@
                     <iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="button-bar">
-                  <ul class="button-group [radius round]">
-                    <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 1</a></li>
-                    <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 2</a></li>
-                    <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 3</a></li>
-                  </ul>
-                  <ul class="button-group [radius round]">
-                    <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 1</a></li>
-                    <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 2</a></li>
-                    <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 3</a></li>
-                  </ul>
+                    <ul class="button-group [radius round]">
+                        <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 1</a>
+                        </li>
+                        <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 2</a>
+                        </li>
+                        <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 3</a>
+                        </li>
+                    </ul>
+                    <ul class="button-group [radius round]">
+                        <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 1</a>
+                        </li>
+                        <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 2</a>
+                        </li>
+                        <li><a href="#" class="[tiny small large] button [alert success secondary] [disabled]">Button 3</a>
+                        </li>
+                    </ul>
                 </div>
-                
-                <a href="#" class="[tiny small medium large] [secondary alert success] [radius round] button split">Split Button <span data-dropdown="drop"></span></a><br>
+
+                <a href="#" class="[tiny small medium large] [secondary alert success] [radius round] button split">Split Button <span data-dropdown="drop"></span></a>
+                <br>
                 <ul id="drop" class="f-dropdown" data-dropdown-content>
-                  <li><a href="#">This is a link</a></li>
-                  <li><a href="#">This is another</a></li>
-                  <li><a href="#">Yet another</a></li>
+                    <li><a href="#">This is a link</a>
+                    </li>
+                    <li><a href="#">This is another</a>
+                    </li>
+                    <li><a href="#">Yet another</a>
+                    </li>
                 </ul>
-                
-                <a href="#" data-dropdown="drop" class="[tiny small medium large] [secondary alert success] [radius round] button dropdown">Dropdown Button</a><br>
+
+                <a href="#" data-dropdown="drop" class="[tiny small medium large] [secondary alert success] [radius round] button dropdown">Dropdown Button</a>
+                <br>
                 <ul id="drop" data-dropdown-content class="f-dropdown">
-                  <li><a href="#">This is a link</a></li>
-                  <li><a href="#">This is another</a></li>
-                  <li><a href="#">Yet another</a></li>
+                    <li><a href="#">This is a link</a>
+                    </li>
+                    <li><a href="#">This is another</a>
+                    </li>
+                    <li><a href="#">Yet another</a>
+                    </li>
                 </ul>
             </div>
-            
-           
+
+            <div class="row">
+                <div id="myModal" class="reveal-modal" data-reveal>
+                    <h2>Awesome. I have it.</h2>
+                    <p class="lead">Your couch. It is mine.</p>
+                    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+
+                    <ul class="pricing-table">
+                        <li class="title">Standard</li>
+                        <li class="price">$99.99</li>
+                        <li class="description">An awesome description</li>
+                        <li class="bullet-item">1 Database</li>
+                        <li class="bullet-item">5GB Storage</li>
+                        <li class="bullet-item">20 Users</li>
+                        <li class="cta-button"><a class="button" href="#">Buy Now</a>
+                        </li>
+                    </ul>
+
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div data-alert class="alert-box success radius">
+                    This is a success alert with a radius.
+                    <a href="#" class="close">&times;</a>
+                </div>
+
+                <div data-alert class="alert-box warning round">
+                    This is a warning alert that is rounded.
+                    <a href="#" class="close">&times;</a>
+                </div>
+
+                <div data-alert class="alert-box info radius">
+                    This is an info alert with a radius.
+                    <a href="#" class="close">&times;</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="200">Table Header</th>
+                            <th>Table Header</th>
+                            <th width="150">Table Header</th>
+                            <th width="150">Table Header</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                        <tr>
+                            <td>Content Goes Here</td>
+                            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                            <td>Content Goes Here</td>
+                            <td>Content Goes Here</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <dl class="accordion" data-accordion>
+                    <dd>
+                        <a href="#panel1">Accordion 1</a>
+                        <div id="panel1" class="content active">
+                            <dl class="tabs" data-tab>
+                                <dd class="active"><a href="#panel2-1">Tab 1</a>
+                                </dd>
+                                <dd><a href="#panel2-2">Tab 2</a>
+                                </dd>
+                                <dd><a href="#panel2-3">Tab 3</a>
+                                </dd>
+                                <dd><a href="#panel2-4">Tab 4</a>
+                                </dd>
+                            </dl>
+                            <div class="tabs-content">
+                                <div class="content active" id="panel2-1">
+                                    <p>First panel content goes here...</p>
+                                </div>
+                                <div class="content" id="panel2-2">
+                                    <p>Second panel content goes here...</p>
+                                </div>
+                                <div class="content" id="panel2-3">
+                                    <p>Third panel content goes here...</p>
+                                </div>
+                                <div class="content" id="panel2-4">
+                                    <p>Fourth panel content goes here...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#panel2">Accordion 2</a>
+                        <div id="panel2" class="content">
+                            Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </dd>
+                    <dd>
+                        <a href="#panel3">Accordion 3</a>
+                        <div id="panel3" class="content">
+                            Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+
         </div>
 
         <div class="large-4 medium-4 columns">
@@ -370,7 +501,7 @@
                 <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
                 <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a> 
             </div>
-            <div>
+            <div class="row">
                 <ul class="side-nav">
                     <li class="active"><a href="#">Link 1</a>
                     </li>
@@ -380,6 +511,18 @@
                     <li><a href="#">Link 3</a>
                     </li>
                     <li><a href="#">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <a href="#" data-dropdown="drop2">Has Content Dropdown</a>
+                <ul id="drop2" class="f-dropdown content" data-dropdown-content>
+                    <li><a href="#">This is a link</a>
+                    </li>
+                    <li><a href="#">This is another</a>
+                    </li>
+                    <li><a href="#">Yet another</a>
                     </li>
                 </ul>
             </div>
@@ -410,15 +553,17 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="footer">
         <div class="row">
             <ul class="vcard">
                 <li class="fn">Gaius Baltar</li>
                 <li class="street-address">123 Colonial Ave.</li>
                 <li class="locality">Caprica City</li>
-                <li><span class="state">Caprica</span>, <span class="zip">12345</span></li>
-                <li class="email"><a href="#">g.baltar@cmail.com</a></li>
+                <li><span class="state">Caprica</span>, <span class="zip">12345</span>
+                </li>
+                <li class="email"><a href="#">g.baltar@cmail.com</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -429,6 +574,9 @@
     <script src="js/foundation/foundation.magellan.js"></script>
     <script src="js/foundation.orbit.js"></script>
     <script src="js/foundation/foundation.clearing.js"></script>
+    <script src="js/foundation.tooltips.js"></script>
+    <script src="js/foundation/foundation.joyride.js"></script>
+    <script src="js/vendor/jquery.cookie.js"></script>
     <script>
         $(document).foundation();
     </script>
